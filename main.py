@@ -9,6 +9,7 @@ def gettime():
 
 root = Tk()
 root.geometry('200x200')
+root.title('Timer v1.0.1')
 nowtime = Label(root,text='')
 targetdate = Label(root,text='')
 ra = Label(root,text='')
