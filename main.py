@@ -33,7 +33,7 @@ def update():
 
 
 root = tk.Tk()
-root.title('Timer v1.1.0') #title
+root.title('Timer v1.1.1') #title
 root.geometry('300x300') #size
 
 t1 = tk.Label(text='当前时间')
