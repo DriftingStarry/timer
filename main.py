@@ -16,9 +16,10 @@ def get_target():
     # input format: 'year month day'
     try:
         y, m, d = map(int,user_input.split())
+        targetdate = datetime(y, m, d)
     except:
         y, m, d = 2024, 7, 29
-    targetdate = datetime(y, m, d)
+        targetdate = datetime(y, m, d)
     return targetdate
 def update():
     nowtime = getnow()
@@ -42,7 +43,7 @@ nowtime = getnow()
 nowtime_L = tk.Label(root,text=nowtime)
 nowtime_L.pack()
 
-t2 = tk.Label(text = '请输入目标时间\n例如 2024 7 29')
+t2 = tk.Label(text = '请输入目标时间\n例如 2024 7 29\n超出范围不会识别')
 t2.pack()
 
 entry = tk.Entry(root)
